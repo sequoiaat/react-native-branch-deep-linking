@@ -182,7 +182,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7B3B977B1E8C1B650089C04B /* Build configuration list for PBXProject "WebviewExample" */;
+			buildConfigurationList = 7B3B977B1E8C1B650089C04B /* Build configuration list for PBXProject "WebViewExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -410,7 +410,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.branch.react.webview-example-native-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = "Test-Release";
@@ -489,7 +489,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.branch.react.webview-example-native-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = "Test-Debug";
@@ -619,7 +619,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.branch.react.webview-example-native-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -636,7 +636,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.branch.react.webview-example-native-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -644,7 +644,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7B3B977B1E8C1B650089C04B /* Build configuration list for PBXProject "WebviewExample" */ = {
+		7B3B977B1E8C1B650089C04B /* Build configuration list for PBXProject "WebViewExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7B3B97901E8C1B650089C04B /* Debug */,

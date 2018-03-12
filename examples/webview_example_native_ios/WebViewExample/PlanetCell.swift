@@ -107,10 +107,11 @@ class PlanetCell: UITableViewCell {
             .kern(1.2)
         // */
         let font = UIFont(name: Style.boldFontName, size: Style.rowFontSize)!
-        let attributes: [NSAttributedStringKey: Any] = [
-            NSAttributedStringKey.font: font,
-            NSAttributedStringKey.kern: 1.2
-            ]
+        let attributes = [NSFontAttributeName: font, NSKernAttributeName: CGFloat(1.2)] as [String : Any];
+//        let attributes: [NSAttributedStringKey: Any] = [
+//            NSAttributedStringKey.font: font,
+//            NSAttributedStringKey.kern: 1.2
+//            ]
 
         label.attributedText = NSAttributedString(string: planetData.title, attributes: attributes)
         label.textAlignment = .left
