@@ -4,12 +4,12 @@ import android.content.Context;
 import android.support.multidex.MultiDex;
 import android.support.multidex.MultiDexApplication;
 
-import com.facebook.react.ReactApplication;
-import io.branch.rnbranch.RNBranchPackage;
+import com.facebook.react.ReactApplication;
 
 import io.branch.referral.Branch;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
+import io.branch.rnbranch.RNBranchPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
 
