@@ -5,6 +5,7 @@ import android.support.multidex.MultiDex;
 import android.support.multidex.MultiDexApplication;
 
 import com.facebook.react.ReactApplication;
+import com.leo_pharma.analytics.AnalyticsPackage;
 import io.branch.rnbranch.RNBranchPackage;
 
 import io.branch.referral.Branch;
@@ -28,6 +29,7 @@ public class MainApplication extends MultiDexApplication implements ReactApplica
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new AnalyticsPackage(),
             new RNBranchPackage()
       );
     }
@@ -47,7 +49,9 @@ public class MainApplication extends MultiDexApplication implements ReactApplica
   public void onCreate() {
     super.onCreate();
     SoLoader.init(this, /* native exopackage */ false);
-    Branch.getAutoInstance(this);
+      Branch.getInstance().setRequestMetadata("$segment_anonymous_id", com.leo_pharma.analytics.AnalyticsPackage.with(this).getAnalyticsContext().traits().anonymousId());
+      //Branch.initSession(getIntent().getData(), this);
+      Branch.getAutoInstance(this);
   }
 
   @Override
