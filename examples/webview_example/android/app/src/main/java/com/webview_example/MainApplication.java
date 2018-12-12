@@ -49,7 +49,7 @@ public class MainApplication extends MultiDexApplication implements ReactApplica
   public void onCreate() {
     super.onCreate();
     SoLoader.init(this, /* native exopackage */ false);
-      Branch.getInstance().setRequestMetadata("$segment_anonymous_id", com.leo_pharma.analytics.AnalyticsPackage.with(this).getAnalyticsContext().traits().anonymousId());
+      Branch.getInstance().setRequestMetadata("$segment_anonymous_id", com.segment.analytics.Analytics.with(this).getAnalyticsContext().traits().anonymousId());
       //Branch.initSession(getIntent().getData(), this);
       Branch.getAutoInstance(this);
   }
